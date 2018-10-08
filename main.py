@@ -8,15 +8,25 @@ import pandas
 
 input_list=[]
 
-userInput = int(input("Please specify desired columns.\n"))
-
-while userInput >= 1 and userInput <= 20:
-	userInput = int(input("Please specify desired columns.\n"))
-	if userInput in input_list:
-		print (f'You already entered this column value. Try another or press the ; key to exit.')
+while 1:#userInput >= 1 and userInput <= 20:
+	try:
+		userInput = int(input("Please specify desired columns.\n"))
+	except ValueError:
+		print("Input must be of int type. Ending input loop.")
+		break	
+	if userInput < 1 or userInput > 20:
+		print (f'Out of range.\n')
+		continue
+	elif userInput in input_list:
+		print (f'You already entered this column value. Try another.')
+		continue
+	elif len(input_list) > 20:
+		print (f'List is full. Ending input loop.')
+		break
 	else:
 		input_list.append(userInput)
 
-
+print(f"Printing list...\n")
+print(*input_list, sep='\n')
 print(f"Success")
 
