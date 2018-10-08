@@ -2,9 +2,9 @@ import csv
 import pandas
 
 #BUGS TO FIX:
--entering anything besides an int will crash the loop
--repeats are not working
--you can only exit the loop by entering something out of range
+# -entering anything besides an int will crash the loop
+# -repeats are not working
+# -you can only exit the loop by entering something out of range
 
 input_list=[]
 
