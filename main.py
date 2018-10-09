@@ -65,64 +65,64 @@ print (f"Creating csv file. One moment.")
 print (f'.')
 print (f'..')
 print (f'...')
-if userInput == 1:
+if sortInput == 1:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'incident_id')
-elif userInput == 2:
+elif sortInput == 2:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'case_number')	
-elif userInput == 3:
+elif sortInput == 3:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'incident_datetime')	
-elif userInput == 4:
+elif sortInput == 4:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'incident_type_primary')	
-elif userInput == 5:
+elif sortInput == 5:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'incident_description')	
-elif userInput == 6:
+elif sortInput == 6:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'clearance_type')	
-elif userInput == 7:
+elif sortInput == 7:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'address_1')	
-elif userInput == 8:
+elif sortInput == 8:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'address_2')	
-elif userInput == 9:
+elif sortInput == 9:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'city')	
-elif userInput == 10:
+elif sortInput == 10:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'state')	
-elif userInput == 11:
+elif sortInput == 11:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'zip')	
-elif userInput == 12:
+elif sortInput == 12:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'country')	
-elif userInput == 13:
+elif sortInput == 13:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'latitude')	
-elif userInput == 14:
+elif sortInput == 14:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'longitude')	
-elif userInput == 15:
+elif sortInput == 15:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'created_at')	
-elif userInput == 16:
+elif sortInput == 16:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'updated_at')	
-elif userInput == 17:
+elif sortInput == 17:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'location')	
-elif userInput == 18:
+elif sortInput == 18:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'hour_of_day')	
-elif userInput == 19:
+elif sortInput == 19:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'day_of_week')	
-elif userInput == 20:
+elif sortInput == 20:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
 	index_col = 'parent_incident_type')	
 df.to_csv('final_output.csv')
