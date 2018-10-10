@@ -1,8 +1,8 @@
 # crimereader
 Python script to read and customize output of Riverside crime from October 2017 to September 24 2018
 
-Alt-H1
-======
+How to Use
+------
 -Take in user input in the form of numbers.
 -Array of input will NOT take any repeated values.
 -Type any non-int value to cancel input and proceed with rest of program.
