@@ -106,71 +106,69 @@ print (f'..')
 print (f'...')
 if sortInput == 1:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'incident_id')
+	index_col = 'incident_id', parse_dates=['incident_datetime'])
 elif sortInput == 2:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'case_number')	
+	index_col = 'case_number', parse_dates=['incident_datetime'])	
 elif sortInput == 3:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'incident_datetime')	
+	index_col = 'incident_datetime', parse_dates=['incident_datetime'])	
 elif sortInput == 4:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'incident_type_primary')	
+	index_col = 'incident_type_primary', parse_dates=['incident_datetime'])	
 elif sortInput == 5:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'incident_description')	
+	index_col = 'incident_description', parse_dates=['incident_datetime'])	
 elif sortInput == 6:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'clearance_type')	
+	index_col = 'clearance_type', parse_dates=['incident_datetime'])	
 elif sortInput == 7:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'address_1')	
+	index_col = 'address_1', parse_dates=['incident_datetime'])	
 elif sortInput == 8:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'address_2')	
+	index_col = 'address_2', parse_dates=['incident_datetime'])	
 elif sortInput == 9:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'city')	
+	index_col = 'city', parse_dates=['incident_datetime'])	
 elif sortInput == 10:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'state')	
+	index_col = 'state', parse_dates=['incident_datetime'])	
 elif sortInput == 11:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'zip')	
+	index_col = 'zip', parse_dates=['incident_datetime'])	
 elif sortInput == 12:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'country')	
+	index_col = 'country', parse_dates=['incident_datetime'])	
 elif sortInput == 13:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'latitude')	
+	index_col = 'latitude', parse_dates=['incident_datetime'])	
 elif sortInput == 14:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'longitude')	
+	index_col = 'longitude', parse_dates=['incident_datetime'])	
 elif sortInput == 15:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'created_at')	
+	index_col = 'created_at', parse_dates=['incident_datetime'])	
 elif sortInput == 16:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'updated_at')	
+	index_col = 'updated_at', parse_dates=['incident_datetime'])	
 elif sortInput == 17:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'location')	
+	index_col = 'location', parse_dates=['incident_datetime'])	
 elif sortInput == 18:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'hour_of_day')	
+	index_col = 'hour_of_day', parse_dates=['incident_datetime'])	
 elif sortInput == 19:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'day_of_week')	
+	index_col = 'day_of_week', parse_dates=['incident_datetime'])	
 elif sortInput == 20:
 	df = pandas.read_csv('Riverside_County_Sheriff_Department.csv',
-	index_col = 'parent_incident_type')	
+	index_col = 'parent_incident_type', parse_dates=['incident_datetime'])	
 df.to_csv('final_output.csv')
 if path.exists('final_output.csv'):
 	print(f"File created successfully.")
 else:
 	print(f"Error, file not created.")
-# if userInput == zip:
-# 	print(f"SUCC")
 
 
 
